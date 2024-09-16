@@ -14,7 +14,7 @@ body {
   background-color: #007bff; /* Primary blue color */
   padding: 20px 0;
   text-align: center;
-  width: 160%;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   position: relative;
   z-index: 10;
@@ -39,8 +39,21 @@ body {
   border-radius: 2px;
 }
 
-table tr td {
-  vertical-align: middle;
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin: 0 -15px; /* Optional: Adjust margin if needed */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders collapse */
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Border for table cells */
 }
 
 td button {
@@ -145,7 +158,9 @@ form .inputField > div input {
   .header h1 {
     font-size: 2rem;
   }
-
+  .table-container {
+    padding: 0 15px; /* Adjust padding on smaller screens */
+  }
   .modal-body form {
     flex-direction: column;
     align-items: center;

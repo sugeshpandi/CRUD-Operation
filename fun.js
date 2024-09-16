@@ -1,3 +1,4 @@
+
 // Get references to form elements
 const form = document.getElementById("myForm"),
     imgInput = document.querySelector(".img"),
